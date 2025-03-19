@@ -229,7 +229,7 @@ export default function Projects() {
                 </div>
 
                 <motion.a
-                  href="https://github.com/Rushikeshnimkar"
+                  href="https://github.com/khetha100"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg z-10 bg-neutral-800/80 hover:bg-neutral-700/80 transition-all duration-300 text-sm border border-neutral-700/50 hover:border-blue-500/30 group"
