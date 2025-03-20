@@ -16,8 +16,8 @@ import { queryVectorStore } from "@/lib/embeddings";
 // Add CORS check middleware
 function isAllowedOrigin(origin: string | null) {
   const allowedOrigins = [
-    "https://rushikeshnimkar.xyz",
-    "https://www.rushikeshnimkar.xyz",
+    "http://localhost:3000",
+    "http://localhost:3000",
 
     // Include localhost for development(uncomment for development)
     // "http://localhost:3000",
@@ -191,8 +191,8 @@ class OpenRouterChatModel extends ChatOpenAI {
         msg._getType() === "human"
           ? "user"
           : msg._getType() === "system"
-          ? "system"
-          : "assistant",
+            ? "system"
+            : "assistant",
       content: msg.content as string,
     }));
 
@@ -226,8 +226,8 @@ class OpenRouterChatModel extends ChatOpenAI {
           method: "POST",
           headers: {
             Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
-            "HTTP-Referer": "https://rushikeshnimkar.xyz",
-            "X-Title": "Rushikesh's Portfolio",
+            "HTTP-Referer": "",
+            "X-Title": "Khetha's Portfolio",
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
@@ -278,52 +278,52 @@ function generateStructuredResponse(queryType: string): string {
   // Define individual project templates
   const projectTemplates: Record<string, any> = {
     gitsplit_project: [
-      {
-        title: "Gitsplit",
-        description:
-          "A funding platform for open-source projects using Next.js, Golang, and PostgreSQL.",
-        technologies: ["Next.js", "Golang", "PostgreSQL", "GitHub API"],
-        link: "https://ethglobal.com/showcase/gitsplit-pkp5d",
-      },
-    ],
-    cryptorage_project: [
-      {
-        title: "Cryptorage",
-        description:
-          "Chrome extension using React.js and Supabase for secure data storage with blockchain integration.",
-        technologies: [
-          "React.js",
-          "Supabase",
-          "Walrus Blockchain",
-          "OCR",
-          "Gemini Nano",
-        ],
-        link: "https://dorahacks.io/buidl/16435",
-      },
-    ],
-    terminal_ai_project: [
-      {
-        title: "Terminal AI Assistant",
-        description:
-          "Node.js CLI tool that converts natural language into Windows command line instructions.",
-        technologies: ["Node.js", "DeepSeek-V3 AI", "CLI"],
-        link: "https://www.npmjs.com/package/terminal-ai-assistant",
-      },
+      //   {
+      //     title: "Gitsplit",
+      //     description:
+      //       "A funding platform for open-source projects using Next.js, Golang, and PostgreSQL.",
+      //     technologies: ["Next.js", "Golang", "PostgreSQL", "GitHub API"],
+      //     link: "https://ethglobal.com/showcase/gitsplit-pkp5d",
+      //   },
+      // ],
+      // cryptorage_project: [
+      //   {
+      //     title: "Cryptorage",
+      //     description:
+      //       "Chrome extension using React.js and Supabase for secure data storage with blockchain integration.",
+      //     technologies: [
+      //       "React.js",
+      //       "Supabase",
+      //       "Walrus Blockchain",
+      //       "OCR",
+      //       "Gemini Nano",
+      //     ],
+      //     link: "https://dorahacks.io/buidl/16435",
+      //   },
+      // ],
+      // terminal_ai_project: [
+      //   {
+      //     title: "Terminal AI Assistant",
+      //     description:
+      //       "Node.js CLI tool that converts natural language into Windows command line instructions.",
+      //     technologies: ["Node.js", "DeepSeek-V3 AI", "CLI"],
+      //     link: "https://www.npmjs.com/package/terminal-ai-assistant",
+      //   },
     ],
   };
 
   // Define individual contact templates
   const contactTemplates: Record<string, any> = {
     email_contact: {
-      email: "rushikeshnimkar396@gmail.com",
+      email: "Khethukuthulasimamane@gmail.com",
       type: "Email",
     },
     phone_contact: {
-      phone: "+919322675715",
+      phone: "+27682712305",
       type: "Phone",
     },
     location_contact: {
-      location: "Nagpur",
+      location: "Johannesburg",
       type: "Location",
     },
   };
@@ -333,7 +333,7 @@ function generateStructuredResponse(queryType: string): string {
     resume_link: [
       {
         title: "Resume",
-        url: "https://rushikeshnimkar.xyz/resume",
+        url: "",
         description:
           "View my detailed resume with skills, experience, and education",
       },
@@ -341,41 +341,41 @@ function generateStructuredResponse(queryType: string): string {
     github_link: [
       {
         title: "GitHub Profile",
-        url: "https://github.com/Rushikeshnimkar",
+        url: "https://github.com/khetha100",
         description:
-          "Check out my code repositories and open-source contributions",
+          "Check out my code repositories",
       },
     ],
     linkedin_link: [
       {
         title: "LinkedIn Profile",
-        url: "https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/",
+        url: "https://www.linkedin.com/in/khethukuthula-simamane-67127a265/",
         description: "Connect with me professionally on LinkedIn",
       },
     ],
     portfolio_link: [
-      {
-        title: "Portfolio Website",
-        url: "https://rushikeshnimkar.xyz",
-        description: "My personal portfolio showcasing projects and skills",
-      },
+      // {
+      //   title: "Portfolio Website",
+      //   url: "https://rushikeshnimkar.xyz",
+      //   description: "My personal portfolio showcasing projects and skills",
+      // },
     ],
     project_links: [
-      {
-        title: "Gitsplit Project",
-        url: "https://ethglobal.com/showcase/gitsplit-pkp5d",
-        description: "Funding platform for open-source projects",
-      },
-      {
-        title: "Cryptorage Project",
-        url: "https://dorahacks.io/buidl/16435",
-        description: "Chrome extension for secure data storage",
-      },
-      {
-        title: "Terminal AI Assistant",
-        url: "https://www.npmjs.com/package/terminal-ai-assistant",
-        description: "CLI tool for natural language command conversion",
-      },
+      // {
+      //   title: "Gitsplit Project",
+      //   url: "https://ethglobal.com/showcase/gitsplit-pkp5d",
+      //   description: "Funding platform for open-source projects",
+      // },
+      // {
+      //   title: "Cryptorage Project",
+      //   url: "https://dorahacks.io/buidl/16435",
+      //   description: "Chrome extension for secure data storage",
+      // },
+      // {
+      //   title: "Terminal AI Assistant",
+      //   url: "https://www.npmjs.com/package/terminal-ai-assistant",
+      //   description: "CLI tool for natural language command conversion",
+      // },
     ],
   };
 
@@ -396,33 +396,33 @@ function generateStructuredResponse(queryType: string): string {
       { name: "Google Cloud", category: "Cloud" },
     ],
     projects: [
-      {
-        title: "Gitsplit",
-        description:
-          "A funding platform for open-source projects using Next.js, Golang, and PostgreSQL.",
-        technologies: ["Next.js", "Golang", "PostgreSQL", "GitHub API"],
-        link: "https://ethglobal.com/showcase/gitsplit-pkp5d",
-      },
-      {
-        title: "Cryptorage",
-        description:
-          "Chrome extension using React.js and Supabase for secure data storage with blockchain integration.",
-        technologies: [
-          "React.js",
-          "Supabase",
-          "Walrus Blockchain",
-          "OCR",
-          "Gemini Nano",
-        ],
-        link: "https://dorahacks.io/buidl/16435",
-      },
-      {
-        title: "Terminal AI Assistant",
-        description:
-          "Node.js CLI tool that converts natural language into Windows command line instructions.",
-        technologies: ["Node.js", "DeepSeek-V3 AI", "CLI"],
-        link: "https://www.npmjs.com/package/terminal-ai-assistant",
-      },
+      // {
+      //   title: "Gitsplit",
+      //   description:
+      //     "A funding platform for open-source projects using Next.js, Golang, and PostgreSQL.",
+      //   technologies: ["Next.js", "Golang", "PostgreSQL", "GitHub API"],
+      //   link: "https://ethglobal.com/showcase/gitsplit-pkp5d",
+      // },
+      // {
+      //   title: "Cryptorage",
+      //   description:
+      //     "Chrome extension using React.js and Supabase for secure data storage with blockchain integration.",
+      //   technologies: [
+      //     "React.js",
+      //     "Supabase",
+      //     "Walrus Blockchain",
+      //     "OCR",
+      //     "Gemini Nano",
+      //   ],
+      //   link: "https://dorahacks.io/buidl/16435",
+      // },
+      // {
+      //   title: "Terminal AI Assistant",
+      //   description:
+      //     "Node.js CLI tool that converts natural language into Windows command line instructions.",
+      //   technologies: ["Node.js", "DeepSeek-V3 AI", "CLI"],
+      //   link: "https://www.npmjs.com/package/terminal-ai-assistant",
+      // },
     ],
     experience: [
       {
@@ -434,81 +434,81 @@ function generateStructuredResponse(queryType: string): string {
       },
     ],
     education: [
-      {
-        title: "BE Computer Engineering",
-        institution: "AISSMS COE, Pune",
-        period: "2020 - 2024",
-        description: "Bachelor's degree in Computer Engineering",
-      },
-      {
-        title: "12th Grade",
-        institution: "DR. M.K. UMATHE COLLEGE, Nagpur",
-        period: "2019 - 2020",
-        description: "Higher secondary education",
-      },
-      {
-        title: "10th Grade",
-        institution: "SCHOOL OF SCHOLARS, Nagpur",
-        period: "2017 - 2018",
-        description: "Secondary education",
-      },
-    ],
-    contact: {
-      email: "rushikeshnimkar396@gmail.com",
-      phone: "+919322675715",
-      location: "Nagpur",
-      linkedin: "https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/",
-      github: "https://github.com/Rushikeshnimkar",
-      portfolio: "https://rushikeshnimkar.xyz/",
-    },
-    awards: [
-      {
-        title: "Solana Radar Hackathon 2024",
-        description:
-          "Achieved 4th place out of 200+ global teams, demonstrating expertise in blockchain technology and innovative problem-solving.",
-      },
-      {
-        title: "Sui Overflow 2024",
-        description:
-          "Awarded the Community Favorite Award for Mystic Tarot, an innovative Web3 tarot reading platform on the Sui Network.",
-      },
-    ],
-    links: [
-      {
-        title: "Portfolio Website",
-        url: "https://rushikeshnimkar.xyz",
-        description: "My personal portfolio showcasing projects and skills",
-      },
-      {
-        title: "Resume",
-        url: "https://rushikeshnimkar.xyz/resume",
-        description: "View my detailed resume",
-      },
-      {
-        title: "GitHub Profile",
-        url: "https://github.com/Rushikeshnimkar",
-        description: "Check out my code repositories and contributions",
-      },
-      {
-        title: "LinkedIn",
-        url: "https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/",
-        description: "Connect with me professionally",
-      },
-      {
-        title: "Gitsplit Project",
-        url: "https://ethglobal.com/showcase/gitsplit-pkp5d",
-        description: "Funding platform for open-source projects",
-      },
-      {
-        title: "Cryptorage Project",
-        url: "https://dorahacks.io/buidl/16435",
-        description: "Chrome extension for secure data storage",
-      },
-      {
-        title: "Terminal AI Assistant",
-        url: "https://www.npmjs.com/package/terminal-ai-assistant",
-        description: "CLI tool for natural language command conversion",
-      },
+      //   {
+      //     title: "BE Computer Engineering",
+      //     institution: "AISSMS COE, Pune",
+      //     period: "2020 - 2024",
+      //     description: "Bachelor's degree in Computer Engineering",
+      //   },
+      //   {
+      //     title: "12th Grade",
+      //     institution: "DR. M.K. UMATHE COLLEGE, Nagpur",
+      //     period: "2019 - 2020",
+      //     description: "Higher secondary education",
+      //   },
+      //   {
+      //     title: "10th Grade",
+      //     institution: "SCHOOL OF SCHOLARS, Nagpur",
+      //     period: "2017 - 2018",
+      //     description: "Secondary education",
+      //   },
+      // ],
+      // contact: {
+      //   email: "rushikeshnimkar396@gmail.com",
+      //   phone: "+919322675715",
+      //   location: "Nagpur",
+      //   linkedin: "https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/",
+      //   github: "https://github.com/Rushikeshnimkar",
+      //   portfolio: "https://rushikeshnimkar.xyz/",
+      // },
+      // awards: [
+      //   {
+      //     title: "Solana Radar Hackathon 2024",
+      //     description:
+      //       "Achieved 4th place out of 200+ global teams, demonstrating expertise in blockchain technology and innovative problem-solving.",
+      //   },
+      //   {
+      //     title: "Sui Overflow 2024",
+      //     description:
+      //       "Awarded the Community Favorite Award for Mystic Tarot, an innovative Web3 tarot reading platform on the Sui Network.",
+      //   },
+      // ],
+      // links: [
+      //   {
+      //     title: "Portfolio Website",
+      //     url: "https://rushikeshnimkar.xyz",
+      //     description: "My personal portfolio showcasing projects and skills",
+      //   },
+      //   {
+      //     title: "Resume",
+      //     url: "https://rushikeshnimkar.xyz/resume",
+      //     description: "View my detailed resume",
+      //   },
+      //   {
+      //     title: "GitHub Profile",
+      //     url: "https://github.com/Rushikeshnimkar",
+      //     description: "Check out my code repositories and contributions",
+      //   },
+      //   {
+      //     title: "LinkedIn",
+      //     url: "https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/",
+      //     description: "Connect with me professionally",
+      //   },
+      //   {
+      //     title: "Gitsplit Project",
+      //     url: "https://ethglobal.com/showcase/gitsplit-pkp5d",
+      //     description: "Funding platform for open-source projects",
+      //   },
+      //   {
+      //     title: "Cryptorage Project",
+      //     url: "https://dorahacks.io/buidl/16435",
+      //     description: "Chrome extension for secure data storage",
+      //   },
+      //   {
+      //     title: "Terminal AI Assistant",
+      //     url: "https://www.npmjs.com/package/terminal-ai-assistant",
+      //     description: "CLI tool for natural language command conversion",
+      //   },
     ],
   };
 
@@ -656,7 +656,7 @@ export async function POST(req: Request) {
         }
 
         // Modify system prompt based on whether structured data will be added
-        let systemContent = `You are Rushikesh Nimkar, a full-stack developer with expertise in Java, React.js, Next.js, and MySQL.`;
+        let systemContent = `You are Khethukuthula Simamane, a full-stack developer with expertise in Java, React.js, Next.js, and MySQL.`;
 
         if (willHaveStructuredData) {
           // For queries that will have structured data, instruct the model to be brief
@@ -700,7 +700,7 @@ export async function POST(req: Request) {
         }
 
         systemContent += `\n\nRules:
-        1. Speak as Rushikesh using "I" and "my"
+        1. Speak as Khethukuthula using "I" and "my"
         2. Keep responses concise and focused
         3. If unsure about specific details, say "Feel free to contact me directly for more information"
         4. Use web search results when provided for up-to-date information
@@ -751,15 +751,15 @@ export async function POST(req: Request) {
     // Convert chat history to the format expected by LangGraph
     const formattedMessages = chatHistory
       ? chatHistory.map((msg: ChatMessage) =>
-          msg.type === "user"
-            ? new HumanMessage(msg.content)
-            : new AIMessage(msg.content)
-        )
+        msg.type === "user"
+          ? new HumanMessage(msg.content)
+          : new AIMessage(msg.content)
+      )
       : [];
 
     // Add the current prompt as a human message
     formattedMessages.push(new HumanMessage(prompt));
-
+    // http://localhost:3000/api/chat
     // Generate a thread ID for this conversation
     // Use the provided sessionId or generate a new one
     const threadId = sessionId || Date.now().toString();

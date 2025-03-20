@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://rushikeshnimkar.xyz";
+  const baseUrl = "";
 
   // Get the current date for lastModified
   const currentDate = new Date();

@@ -8,7 +8,7 @@ import Head from "next/head";
 
 // SEO keywords and descriptions
 const SEO = {
-  title: "Rushikesh Nimkar | Projects Portfolio",
+  title: "Khethukuthula Simamane | Projects Portfolio",
   description:
     "Explore my portfolio of web development and software engineering projects. Featuring Next.js, React, TypeScript, and blockchain applications.",
   keywords:
@@ -33,57 +33,57 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "CryptoRage",
+    title: "Chess",
     description:
-      "Cryptorage is a Chrome extension that integrates with Sui wallet to provide secure storage and sharing of screenshots within teams. It allows users to capture, store, and share screenshots with team members, all while leveraging blockchain technology for enhanced security and transparency.",
+      "This is a chess game",
     media: {
       type: "image",
-      src: "/projects/cryptorage.png",
+      src: "/projects/chess.jpg",
     },
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    link: "https://cryptorage-login.vercel.app/",
-    github: "https://github.com/Rushikeshnimkar/CryptoRage",
+    link: "",
+    github: "",
   },
   {
     id: 2,
-    title: "GitSplit",
+    title: "E-Commerce",
     description:
       "A Web App for Open-Source projects to raise funding and split among its contributors. Discover and Showcase your projects on this platform.",
     media: {
       type: "image",
       src: "/projects/gitsplit.png",
     },
-    tags: ["React", "Next.js", "Tailwind", "SQL", "Golang"],
+    tags: ["Angular", "Tailwind", "Postgresql", "Springboot"],
     link: "",
-    github: "https://github.com/GitSplit-org",
-  },
-  {
-    id: 3,
-    title: "Communepro",
-    description:
-      "Communepro is a modern, customizable NPM package that provides a comment section component for React applications. It offers features like nested replies, real-time updates, dark mode support, and a responsive design, making it easy to enhance your app with an intuitive and engaging commenting experience.",
-    media: {
-      type: "image",
-      src: "/projects/communepro.png",
-    },
-    tags: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-    link: "https://communepro.vercel.app/",
-    github: "https://www.npmjs.com/package/addcomment",
-  },
-  {
-    id: 4,
-    title: "Terminal AI Assistant",
-    description:
-      "A powerful CLI tool that helps users interact with the Windows command line using natural language. Built with Node.js and powered by Qwen: Qwen2.5 VL 72B Instruct AI.",
-    media: {
-      type: "youtube",
-      src: "https://youtu.be/TwaQDbr75z4",
-    },
-    tags: ["Node.js", "TypeScript", "Qwen AI", "Commander.js", "Chalk"],
-    link: "https://www.npmjs.com/package/terminal-ai-assistant",
-    github:
-      "https://github.com/Rushikeshnimkar/terminal-ai-assistant-windows.git",
-  },
+    github: "",
+  }
+  // {
+  //   id: 3,
+  //   title: "Communepro",
+  //   description:
+  //     "Communepro is a modern, customizable NPM package that provides a comment section component for React applications. It offers features like nested replies, real-time updates, dark mode support, and a responsive design, making it easy to enhance your app with an intuitive and engaging commenting experience.",
+  //   media: {
+  //     type: "image",
+  //     src: "/projects/communepro.png",
+  //   },
+  //   tags: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
+  //   link: "https://communepro.vercel.app/",
+  //   github: "https://www.npmjs.com/package/addcomment",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Terminal AI Assistant",
+  //   description:
+  //     "A powerful CLI tool that helps users interact with the Windows command line using natural language. Built with Node.js and powered by Qwen: Qwen2.5 VL 72B Instruct AI.",
+  //   media: {
+  //     type: "youtube",
+  //     src: "https://youtu.be/TwaQDbr75z4",
+  //   },
+  //   tags: ["Node.js", "TypeScript", "Qwen AI", "Commander.js", "Chalk"],
+  //   link: "https://www.npmjs.com/package/terminal-ai-assistant",
+  //   github:
+  //     "https://github.com/Rushikeshnimkar/terminal-ai-assistant-windows.git",
+  // },
 ];
 
 // Function to extract YouTube video ID from URL
@@ -139,10 +139,10 @@ export default function Projects() {
       keywords: SEO.keywords,
       mainEntity: {
         "@type": "Person",
-        name: "Rushikesh Nimkar",
-        url: "https://github.com/Rushikeshnimkar",
+        name: "Khethukuthula Simamane",
+        url: "https://github.com/khetha100",
         sameAs: [
-          "https://github.com/Rushikeshnimkar",
+          "https://github.com/khetha100",
           // Add other social profiles if available
         ],
       },
@@ -252,7 +252,7 @@ export default function Projects() {
                       transition={{ duration: 0.5, delay: 5 }} // Show the real graph after 5 seconds
                       className="w-full"
                     >
-                      <GitHubContributions username="Rushikeshnimkar" />
+                      <GitHubContributions username="khetha100" />
                     </motion.div>
 
                     {/* Loading animation overlay that matches GitHub's appearance */}
@@ -344,21 +344,19 @@ export default function Projects() {
                   <button
                     onClick={() => setActiveProject(index)}
                     className={`w-full text-left p-4 sm:p-6 transition-all duration-300 rounded-xl lg:mb-4 relative overflow-hidden group
-                      ${
-                        activeProject === index
-                          ? "bg-neutral-900"
-                          : "hover:bg-neutral-900/50"
+                      ${activeProject === index
+                        ? "bg-neutral-900"
+                        : "hover:bg-neutral-900/50"
                       }`}
                     aria-label={`View ${project.title} project details`}
                   >
                     <div className="relative z-10">
                       <h3
                         className={`text-lg sm:text-xl font-semibold mb-2 transition-colors
-                        ${
-                          activeProject === index
+                        ${activeProject === index
                             ? "text-blue-400"
                             : "text-neutral-400"
-                        }`}
+                          }`}
                       >
                         {project.title}
                       </h3>
@@ -399,7 +397,7 @@ export default function Projects() {
                     <>
                       <Image
                         src={projects[activeProject].media.src}
-                        alt={`${projects[activeProject].title} - Portfolio Project by Rushikesh Nimkar`}
+                        alt={`${projects[activeProject].title} - Portfolio Project by Khethukuthula Simamane`}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
