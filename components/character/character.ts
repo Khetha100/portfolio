@@ -1,14 +1,14 @@
 export const characterContent = `
-Rushikesh Nimkar
+Khethukuthula Simamane
 Full-Stack Engineer
 
-Location: Nagpur
-Phone: +919322675715
-Email: rushikeshnimkar396@gmail.com
-Portfolio: https://rushikeshnimkar.xyz/
-GitHub: https://github.com/Rushikeshnimkar
-LinkedIn: https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/
-resume: https://rushikeshnimkar.xyz/resume
+Location: Johannesburg
+Phone: +27682712305
+Email: khethukuthulasimamane@gmail.com
+Portfolio: 
+GitHub: https://github.com/khetha100
+LinkedIn: https://www.linkedin.com/in/khethukuthula-simamane-67127a265/
+resume: 
 
 
 Summary:
