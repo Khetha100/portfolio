@@ -130,7 +130,7 @@ export default function HomePage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Full Stack Developer | Tech Enthusiast
+            Full Stack Developer | Logic Master
           </motion.p>
 
           <motion.p
@@ -139,10 +139,9 @@ export default function HomePage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.1 }}
           >
-            I turn coffee into code and bugs into features. Full-stack developer
+            I turn ideas into code and love showing my creative nature through coding. Full-stack developer
             who enjoys building digital puzzles and occasionally solving them.
-            Currently exploring blockchain, because why not add more blocks to
-            my stack?
+            Currently exploring Artificial intelligence for fun since it a new tech tool, why not?
           </motion.p>
 
           <motion.div
