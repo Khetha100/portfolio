@@ -57,15 +57,14 @@ export default function About() {
               <p className="text-lg md:text-xl text-neutral-300 leading-relaxed">
                 I&apos;m always looking out for new things to explore. I love to
                 collaborate with like-minded people who are fueled by curiosity.
-                I play around Golang and Javascript ecosystems for my web dev
-                projects.
+
               </p>
 
-              <p className="text-lg md:text-xl text-neutral-300 leading-relaxed">
+              {/* <p className="text-lg md:text-xl text-neutral-300 leading-relaxed">
                 Currently I&apos;m diving into Machine Learning after watching
                 many cool projects built around image generators and i&apos;m
                 ready to dive into it
-              </p>
+              </p> */}
 
               <div className="text-lg md:text-xl text-neutral-300 leading-relaxed">
                 When i&apos;m not coding, i usually

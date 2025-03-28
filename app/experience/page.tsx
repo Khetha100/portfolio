@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
-import { FiMapPin, FiAward, FiBriefcase, FiBook } from "react-icons/fi";
+import { FiMapPin,  FiBriefcase, FiBook } from "react-icons/fi";
 
 export default function ExperiencePage() {
   const data = [
@@ -11,20 +11,19 @@ export default function ExperiencePage() {
           <div className="flex items-center gap-2 text-white">
             <FiBook className="w-5 h-5 text-blue-400" />
             <div>
-              <h3 className="text-lg font-semibold">Bachelor of Engineering</h3>
+              <h3 className="text-lg font-semibold">Bachelor of Science</h3>
               <div className="flex items-center gap-2 text-neutral-400 text-sm mt-1">
                 <FiMapPin className="w-4 h-4" />
-                <span>Pune, IN</span>
+                <span>Durban, KZN</span>
               </div>
             </div>
           </div>
 
           <div className="pl-7">
             <p className="text-neutral-300 text-sm leading-relaxed">
-              Graduated with BE in Computer Engineering, focusing on software
-              development and computer science fundamentals. Developed strong
+              Graduated with BSc in Applied mathematics. Developed strong
               problem-solving skills and technical expertise through
-              comprehensive coursework and practical projects.
+              comprehensive coursework.
             </p>
           </div>
         </div>
@@ -36,41 +35,41 @@ export default function ExperiencePage() {
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-white">
             <FiBriefcase className="w-5 h-5 text-blue-400" />
-            <div>
+            {/* <div>
               <h3 className="text-lg font-semibold">Fullstack Developer</h3>
               <div className="flex items-center gap-2 text-neutral-400 text-sm mt-1">
                 <span className="font-medium">Lazarus Network</span>
                 <span>•</span>
                 <span>Remote</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="pl-7">
             <div className="space-y-3 text-sm text-neutral-300">
-              <p className="leading-relaxed">
+              {/* <p className="leading-relaxed">
                 Full-stack development role focusing on building scalable web
                 applications and maintaining cloud infrastructure.
-              </p>
+              </p> */}
               <ul className="space-y-2">
-                <li className="flex items-start gap-2">
+                {/* <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1">▹</span>
                   <span>
                     Developed backend services using Golang and Node.js
                   </span>
-                </li>
-                <li className="flex items-start gap-2">
+                </li> */}
+                {/* <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1">▹</span>
-                  <span>Built responsive frontends with Next.js and React</span>
-                </li>
-                <li className="flex items-start gap-2">
+                  <span>Built responsive frontends with Next.js, React and Angular</span>
+                </li> */}
+                {/* <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1">▹</span>
                   <span>Managed AWS EC2 and Google Cloud infrastructure</span>
-                </li>
-                <li className="flex items-start gap-2">
+                </li> */}
+                {/* <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1">▹</span>
                   <span>Implemented CI/CD pipelines with GitHub Actions</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -81,14 +80,14 @@ export default function ExperiencePage() {
       title: "Awards and Honors",
       content: (
         <div className="space-y-4">
-          <div className="flex items-center gap-2 text-white">
+          {/* <div className="flex items-center gap-2 text-white">
             <FiAward className="w-5 h-5 text-blue-400" />
             <h3 className="text-lg font-semibold">Hackathon Achievements</h3>
-          </div>
+          </div> */}
 
           <div className="pl-7 space-y-6 ">
             {/* Solana Radar Hackathon */}
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <div className="flex items-center gap-3">
                 <span className="flex-shrink-0 w-2 h-2 rounded-full bg-blue-400" />
                 <a
@@ -131,10 +130,10 @@ export default function ExperiencePage() {
                   </span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Sui Overflow */}
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <div className="flex items-center gap-3">
                 <span className="flex-shrink-0 w-2 h-2 rounded-full bg-blue-400" />
                 <h4 className="text-white font-medium">Sui Overflow 2024</h4>
@@ -161,7 +160,7 @@ export default function ExperiencePage() {
                   </span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       ),

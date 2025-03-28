@@ -33,10 +33,10 @@ const skills = {
     { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" /> },
     { name: "PostgreSQL", icon: <SiPostgresql className="text-[#336791]" /> },
   ],
-  "AI & ML Technologies": [
-    { name: "LangChain", icon: <TbBrain className="text-[#00A3A3]" /> },
-    { name: "LangGraph", icon: <TbBrain className="text-[#FF6B6B]" /> },
-  ],
+  // "AI & ML Technologies": [
+  //   { name: "LangChain", icon: <TbBrain className="text-[#00A3A3]" /> },
+  //   { name: "LangGraph", icon: <TbBrain className="text-[#FF6B6B]" /> },
+  // ],
   "Tools & Technologies": [
     { name: "Git", icon: <SiGit className="text-[#F05032]" /> },
     { name: "Docker", icon: <SiDocker className="text-[#2496ED]" /> },
