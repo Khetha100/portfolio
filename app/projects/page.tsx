@@ -40,7 +40,7 @@ const projects: Project[] = [
       type: "image",
       src: "/projects/chess.jpg",
     },
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    tags: ["java"],
     link: "",
     github: "",
   },
@@ -51,9 +51,9 @@ const projects: Project[] = [
       "A Web App for Open-Source projects to raise funding and split among its contributors. Discover and Showcase your projects on this platform.",
     media: {
       type: "image",
-      src: "/projects/gitsplit.png",
+      src: "/projects/E-commerce.png",
     },
-    tags: ["Angular", "Tailwind", "Postgresql", "Springboot"],
+    tags: ["Angular", "SpringBoot", "Tailwind", "Postgresql"],
     link: "",
     github: "",
   }
